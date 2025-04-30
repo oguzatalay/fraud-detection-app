@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fraud Detection Upload</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(-45deg, #f0f0f0, #d9e4f5, #c2d3e8, #f0f0f0);
+            background-size: 400% 400%;
+            animation: gradientBG 15s ease infinite;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: hidden;
+            position: relative;
+        }
+
+        @keyframes gradientBG {
+            0% {background-position: 0% 50%;}
+            50% {background-position: 100% 50%;}
+            100% {background-position: 0% 50%;}
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .upload-container {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .upload-container:hover {
+            transform: scale(1.02);
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #5865F2;
+            border: none;
+            color: white;
+            padding: 12px 28px;
+            text-align: center;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #4752c4;
+            transform: scale(1.05);
+        }
+
+        .result-box {
+            margin-top: 30px;
+            padding: 20px 30px;
+            border-radius: 15px;
+            background-color: #f1f5f9;
+            font-size: 1.3rem;
+            color: #1e293b;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Secret message */
+        .secret-zone {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            width: 100px;
+            height: 50px;
+            opacity: 0;
+            transition: opacity 0.5s;
+            pointer-events: none;
+        }
+
+        .secret-zone:hover {
+            opacity: 1;
+        }
+
+        .secret-text {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 14px;
+            color: #666;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            opacity: 0;
+            transition: opacity 0.5s;
+            pointer-events: auto;
+        }
+
+        .secret-zone:hover .secret-text {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🔎 Upload Your Transaction File</h1>
+
+    <div style="margin-bottom: 30px; text-align: center;">
+        <p style="margin-bottom: 10px; font-size: 14px; color: #374151;">
+            👉 Start here: Download a sample file to test how fraud detection works
+        </p>
+        <a href="/download-sample" download style="text-decoration: none;">
+            <button style="background-color: #34d399;">📥 Download Sample CSV</button>
+        </a>
+    </div>
+
+
+    <div class="upload-container">
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <br>
+            <button type="submit">Predict Fraud</button>
+        </form>
+    </div>
+
+
+
+    {% if prediction_text %}
+        <div class="result-box">
+            {{ prediction_text }}
+        </div>
+    {% endif %}
+
+    <!-- Secret Ozzie Signature -->
+    <div class="secret-zone">
+        <div class="secret-text">Designed by OzzieBoy with Love 💙</div>
+    </div>
+
+</body>
+</html>
