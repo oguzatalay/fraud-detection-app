@@ -29,7 +29,9 @@ Look for the green button labeled **“Download Sample CSV”**.
 
 #### 2. 📂 Upload the CSV File  
 Click the **“Choose File”** button to select the sample file you just downloaded.  
+
 🔹 Once selected, the file name should appear next to the button.  
+
 Then click the blue **“Predict Fraud”** button.
 
 <img src="https://github.com/user-attachments/assets/4498e6f3-f120-415e-81df-8691a9b5cf8e" alt="Download Step" width="500"/>
