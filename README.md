@@ -21,24 +21,26 @@ Follow the steps below to experience how it functions:
 ### ✅ Step-by-Step Instructions
 
 #### 1. 🔍 Download the Sample File  
-Look for the green button labeled **“Download Sample CSV”**.  
+Look for the green button labeled **“Download Sample CSV”**. 
+
 🔹 This file contains dummy transaction data, including a few fraudulent entries so you can test the system properly.
 
-![image](https://github.com/user-attachments/assets/beffdb62-72a6-4940-b5e5-d32c66e2321f)
+<img src="https://github.com/user-attachments/assets/beffdb62-72a6-4940-b5e5-d32c66e2321f" alt="Download Step" width="500"/>
 
 #### 2. 📂 Upload the CSV File  
 Click the **“Choose File”** button to select the sample file you just downloaded.  
 🔹 Once selected, the file name should appear next to the button.  
 Then click the blue **“Predict Fraud”** button.
 
-![image](https://github.com/user-attachments/assets/4498e6f3-f120-415e-81df-8691a9b5cf8e)
+<img src="https://github.com/user-attachments/assets/4498e6f3-f120-415e-81df-8691a9b5cf8e" alt="Download Step" width="500"/>
+
 
 #### 3. 📊 View the Results  
 The app will instantly analyze the data and return:  
 ✅ Number of safe transactions detected  
 🚨 Number of fraudulent transactions caught
 
-![image](https://github.com/user-attachments/assets/87e1eaf6-7864-4bed-87da-cafa1c60cc5e)
+<img src="https://github.com/user-attachments/assets/87e1eaf6-7864-4bed-87da-cafa1c60cc5e" alt="Download Step" width="500"/>
 
 ---
 
@@ -85,5 +87,5 @@ This app is a small but effective demonstration of what is possible.
 This project is dedicated to making **complex technology accessible to everyone.**  
 Let’s detect fraud — the smart way. 💼💙
 
-# This project was handcrafted with curiosity, caffeine, and a surprising number of unexpected bugs.
+This project was handcrafted with curiosity, caffeine, and a surprising number of unexpected bugs.
 ```
