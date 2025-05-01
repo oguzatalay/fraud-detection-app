@@ -94,6 +94,6 @@ This project was handcrafted with 🧠 curiosity, ☕ caffeine, and 🐞 fixing 
 
 ## 📄 Project Documents
 
-- 🧠 [Technical Report](docs/Technical_Report.pdf)
+- 🧠 [Technical Report] (docs/Technical_Report.pdf)
 - 💡 [Non-Technical Report](docs/Non_Technical_Report.pdf)
 - 🛠️ [User Guide](docs/How_To_Use_This_App.pdf)
