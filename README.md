@@ -89,5 +89,11 @@ This app is a small but effective demonstration of what is possible.
 This project is dedicated to making **complex technology accessible to everyone.**  
 Let’s detect fraud — the smart way. 💼💙
 
-This project was handcrafted with curiosity, caffeine, and a surprising number of unexpected bugs.
+This project was handcrafted with 🧠 curiosity, ☕ caffeine, and 🐞 fixing dozens of meaningless bugs.
 ```
+
+## 📄 Project Documents
+
+- 🧠 [Technical Report](docs/Technical_Report.pdf)
+- 💡 [Non-Technical Report](docs/Non_Technical_Report.pdf)
+- 🛠️ [User Guide](docs/How_To_Use_This_App.pdf)
